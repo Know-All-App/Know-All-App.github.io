@@ -17,7 +17,7 @@
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
   /*========== Font and typography ==========*/
-  --body-font: 'Baloo+2', sans-serif;
+  --body-font: 'Baloo 2', sans-serif;
   --biggest-font-size: 5rem;
   --bigger-font-size: 3.5rem;
   --big-font-size: 2.5rem;
