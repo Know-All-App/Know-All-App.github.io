@@ -232,11 +232,17 @@ img {
 /*=============== HOME ===============*/
 .home__img {
   width: 250px;
+    height: auto;
+
   position: absolute;
   top: -16rem;
   right: 1.5rem;
 }
-
+@media (max-width: 575px) {
+  img {
+    max-width: 50%;
+  }
+}
 .home__data {
   padding-top: 5rem;
 }
@@ -602,6 +608,11 @@ img {
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
+@media (max-width: 575px) {
+  .discount__img {
+    display: none;
+  }
+}
 @media screen and (max-width: 340px) {
   .container {
     margin-left: var(--mb-1);
