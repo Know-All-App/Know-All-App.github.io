@@ -433,7 +433,6 @@ img {
 }
 
 .products__container {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem 1.5rem;
   padding-top: 3rem;
@@ -445,6 +444,8 @@ img {
   background-color: var(--container-color);
   padding: .75rem;
   border-radius: .5rem;
+    display: grid;
+
 }
 
 .products__img {
