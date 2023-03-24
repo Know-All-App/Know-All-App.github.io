@@ -12,18 +12,22 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap" rel="stylesheet">
-        <title>Know All - Explain everything in kid's words</title>
+        <title>Kidsplain - Explain everything in kid's words</title>
     </head>
     <body>
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
             <nav class="nav container">
+            <div class="nav">
                 <a href="#" class="nav__logo">
                     <img src="assets/img/logo.png" alt="">
                 </a>
+                              <h2 class="nav__title">Kidsplain</h2>
+</div>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -31,11 +35,14 @@
                             <a href="#home" class="nav__link active-link">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#Templates" class="nav__link">Templates</a>
+                            <a href="#Features" class="nav__link">Features</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#Plan" class="nav__link">Plan</a>
-                     
+                            <a href="#Templates" class="nav__link">Templates</a>
+                                             </li>
+  <li class="nav__item">
+                            <a href="#Language" class="nav__link">Languages</a>
+                                             </li>
                     </ul>
 
                     <div class="nav__close" id="nav-close">
@@ -58,11 +65,15 @@
                     <div class="home__data">
                         <div class="home__header">
                             <h1 class="home__title">Explain</h1>
-                            <h2 class="home__subtitle">in kid's words</h2>
+                                <h2 class="home__subtitle">in kid's words</h2>
+
                         </div>
 
                         <div class="home__footer">
-                            <p class="home__description">A great answer that ignites curiosity is priceless. No more struggling to explain complex topics to your kids and endless scrolling through Google results.  Get instant answers in 57 languages with our AI-powered App.
+                            <p class="home__description">Have you ever been troubled
+                            <br>- by kid's constant asking, but you don't know how to answer?
+                            <br>- by not spotting a better answer and endlessly scrolling through Google?
+                            <br>- by not being able to explain a complex topic in simple words to your kids?
                             </p>
                                                     <img src="assets/img/appstore.png" alt="" class="appstore__img">
 
@@ -75,33 +86,33 @@
       
 
             <!--=============== SPECS ===============-->
-            <section class="specs section grid" id="Templates">
-                <h2 class="section__title section__title-gradient">Answer Templates ×9</h2>
+            <section class="specs section grid" id="Features">
+                <h2 class="section__title section__title-gradient">We explain</h2>
 
                 <div class="specs__container container grid">
                     <div class="specs__content grid">
                        <div class="specs__data">
-                            <i class="ri-checkbox-multiple-blank-fill specs__icon"></i>
-                            <h3 class="specs__title">Answer with templates</h3>
-                            <span class="specs__subtitle">With our templates, you can <br>make learning more fun. <br>Try them in different senarios.</span>
+                            <i class="ri-earth-line specs__icon"></i>
+                            <h3 class="specs__title">Everything</h3>
+                            <span class="specs__subtitle">With the best AI by your side,<br>answer your kid anywhere, anytime.</span>
                         </div>
                     
                         <div class="specs__data">
-                            <i class="ri-question-answer-line specs__icon"></i>
-                            <h3 class="specs__title">Standard</h3>
-                            <span class="specs__subtitle">A clear and straight answer</span>
+                            <i class="ri-rocket-2-fill specs__icon"></i>
+                            <h3 class="specs__title">Instantly</h3>
+                            <span class="specs__subtitle">Google is outdated. We give you <br>the best ansewr right away. </span>
                         </div>
     
                         <div class="specs__data">
                             <i class="ri-mickey-fill specs__icon"></i>
-                            <h3 class="specs__title">Cartoon Story</h3>
-                            <span class="specs__subtitle">A story featuring your kid's <br>favorite cartoon characters</span>
+                            <h3 class="specs__title">In kid's words</h3>
+                            <span class="specs__subtitle">We break it down for kids<br>in the simplest way. </span>
                         </div>
     
                         <div class="specs__data">
-                            <i class="ri-sword-fill specs__icon"></i>
-                            <h3 class="specs__title">True story</h3>
-                            <span class="specs__subtitle">A true story based on <br> real person and event</span>
+                            <i class="ri-grid-fill specs__icon"></i>
+                            <h3 class="specs__title">In 9 ways</h3>
+                            <span class="specs__subtitle">We offer 9 answer templates<br>fitting different scenarios.</span>
                         </div>
     
                      
@@ -133,22 +144,8 @@
                 </div>
             </section>
 
-            <!--=============== DISCOUNT =============== -->
-            <section class="discount section">
-                <div class="discount__container container grid">
-                    <div class="discount__animate">
-                        <h2 class="discount__title">Language ×57</h2>
-                        <p class="discount__description">With the help of Apple Natural Language framework, we support all common languages in the world. You can ask and get answer both in your own language.</p>
-                      
-                    </div>
-
-                    <img src="assets/img/discount.png" alt="" class="discount__img">
-                </div>
-            </section>
-           
-
-            <!--=============== PRODUCTS ===============-->
-           <section class="products section" id="Plan">
+<!--=============== PRODUCTS ===============-->
+           <section class="products section" id="Templates">
                 <h2 class="section__title section__title-gradient products__line">
                     Answer Templates
                 </h2>
@@ -159,6 +156,8 @@
                         <div class="products__content">
                                 <h3 class="products__title">Standard</h3>
                             <span class="products__price">A clear and straight answer</span>
+                                                        <span class="products__name"><br>Scenario: anytime</span>
+
                         </div>
                     </article>
 
@@ -166,21 +165,27 @@
                     <article class="products__card">
                         <div class="products__content">
                                 <h3 span class="products__title">Stroy</h3 >
-                            <span class="products__price">Start with 'Once upon a time'</span>
+                            <span class="products__price">Start with 'Once upon a time...'</span>
+                                                        <span class="products__name"><br>Scenario: bedtime</span>
+
                         </div>
                     </article>
                       <!--=Standard=-->
                     <article class="products__card">
                         <div class="products__content">
                                 <h3 class="products__title">Cartoon Story</h3>
-                            <span class="products__price">A story</span>
+                            <span class="products__price">A story featuring your kid's favorite cartoon characters</span>
+                                                        <span class="products__name"><br>Scenario: anytime</span>
+
                         </div>
                     </article>
                       <!--=Standard=-->
                     <article class="products__card">
                         <div class="products__content">
                                 <h3 class="products__title">True Story</h3>
-                            <span class="products__price">No free trial</span>
+                            <span class="products__price">A true story based on real person or event</span>
+                                                        <span class="products__name"><br>Scenario: convincing your kids</span>
+
                         </div>
                     </article>
 
@@ -188,35 +193,44 @@
                     <article class="products__card">
                         <div class="products__content">
                                 <h3 class="products__title">Role-playing</h3>
-                            <span class="products__price">No free trial</span>
+                            <span class="products__price">An interactive role-playing game</span>
+                                                        <span class="products__name"><br>Scenario: experimental topic</span>
+
                         </div>
                     </article>
                       <!--=Standard=-->
                     <article class="products__card">
                         <div class="products__content">
                                 <h3 class="products__title">Poem</h3>
-                            <span class="products__price">No free trial</span>
+                            <span class="products__price">A poem</span>
+                                                        <span class="products__name"><br>Scenario: open-ended and emotion envoked questions</span>
+
                         </div>
                     </article>
                       <!--=Standard=-->
                     <article class="products__card">
                         <div class="products__content">
                                 <h3 class="products__title">Prompt</h3>
-                            <span class="products__price">No free trial</span>
+                            <span class="products__price">6 promt questions</span>
+                            <span class="products__name"><br>Scenario: discovering step by step</span>
                         </div>
                     </article>
                       <!--=Standard=-->
                     <article class="products__card">
                         <div class="products__content">
                                 <h3 class="products__title">Ariticle List</h3>
-                            <span class="products__price">No free trial</span>
+                            <span class="products__price">10 articles on the topic with links</span>
+                                                        <span class="products__name"><br>Scenario: self learning</span>
+
                         </div>
                     </article>
                       <!--=Standard=-->
                     <article class="products__card">
                         <div class="products__content">
                                 <h3 class="products__title">Rap</h3>
-                            <span class="products__price">No free trial</span>
+                            <span class="products__price">A rap</span>
+                                                        <span class="products__name"><br>Scenario: creative and culture related</span>
+
                         </div>
                     </article>
                     
@@ -225,6 +239,22 @@
                   
                 </div>
             </section>
+
+            <!--=============== DISCOUNT =============== -->
+            <section class="discount section" id="Language">
+                <div class="discount__container container grid">
+                    <div class="discount__animate">
+                        <h2 class="discount__title">Supported Language ×57</h2>
+                        <p class="discount__description">With the help of Apple Natural Language framework, we support all common languages in the world. <br><br>You can ask and get answer both in your own language.</p>
+                      
+                    </div>
+
+                    <img src="assets/img/discount.png" alt="" class="discount__img">
+                </div>
+            </section>
+           
+
+            
         </main>
 
         <!--=============== FOOTER ===============-->
@@ -239,7 +269,7 @@
     
                     <ul class="footer__links">
                         <li>
-                            <a href="https://ai-quote.com/" class="footer__link">Know All</a>
+                            <a href="https://ai-quote.com/" class="footer__link">Kidsplain</a>
                         </li>
                       
                     </ul>

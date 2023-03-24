@@ -88,7 +88,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 button,
@@ -114,7 +113,7 @@ img {
 .section__title {
   font-size: var(--bigger-font-size);
   text-align: center;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-1-5);
 }
 
 .section__title-gradient {
@@ -149,6 +148,7 @@ img {
   background: transparent;
 }
 
+
 /*=============== NAV ===============*/
 .nav {
   height: var(--header-height);
@@ -161,6 +161,11 @@ img {
   display: flex;
   width: 1.5rem;
 }
+.nav__title {
+  font-size: var(--h2-font-size);
+  padding-left: 1rem;
+}
+
 
 .nav__toggle {
   font-size: 1.2rem;
@@ -236,19 +241,23 @@ img {
 /*=============== HOME ===============*/
 .home__img {
   width: 250px;
-    top: -5rem;
-    right: 1.5rem;
-    width: 46%;
   position: absolute;
+  top: -16rem;
   right: 1.5rem;
 }
-@media screen and (max-width: 767px) {
-.appstore__img {
-  width: 40%;
+
+@media screen and (max-width: 576px) {
+.home__img {
+  top: -8rem;
+width:46%;
 }}
 
+@media screen and (max-width: 767px) {
+.appstore__img {
+width:40%;
+}}
 .home__data {
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 .home__header {
@@ -269,7 +278,7 @@ img {
 
 .home__subtitle {
   font-size: var(--big-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-2-5);
 }
 
 .home__title-description {
@@ -279,9 +288,9 @@ img {
 }
 
 .home__description {
-  margin-bottom: var(--mb-2-5);
-    font-size: var(--h3-font-size);
+  font-size: var(--h3-font-size);
 
+  margin-bottom: var(--mb-2-5);
 }
 
 .home__price {
@@ -352,7 +361,19 @@ img {
 
 .specs__subtitle {
   font-size: var(--normal-font-size);
-}/*=============== TERMS ===============*/
+  
+}
+.specs__img {
+  width: 320px;
+  position: absolute;
+  top: 4.2rem;
+  right: -11.5rem;
+}
+
+.specs__data:nth-child(1), .specs__data:nth-child(4) {
+  margin-left: 1.5rem;
+}
+/*=============== TERMS ===============*/
 .terms__container {
   position: relative;
 }
@@ -386,12 +407,7 @@ img {
 }
 */
 
-.specs__img {
-  width: 250px;
-  position: absolute;
-  top: 2rem;
-  right: -4rem;
-}
+
 
 /*=============== CASE ===============*/
 .case__container {
@@ -432,7 +448,7 @@ img {
 }
 
 .discount__img {
-  width: 400px;
+  width: 300px;
   top: 4rem;
   right: -11rem;
 }
@@ -444,8 +460,8 @@ img {
 
 .products__container {
   grid-template-columns: repeat(2, 1fr);
-  gap: 5rem .5rem;
-  padding-top: 3rem;
+  gap: 3rem 1rem;
+  padding-top: 1rem;
 }
 
 .products__card {
@@ -455,13 +471,14 @@ img {
   padding: .75rem;
   border-radius: .5rem;
     display: grid;
-
 }
+
+
 
 .products__title {
   font-size: var(--h1-font-size);
 text-align: center;
-  width: 180px;
+  width: 168px;
   position: absolute;
   inset: 0;
   margin-right: auto;
@@ -469,12 +486,20 @@ text-align: center;
   top: 1rem;
 }
 
+
 .products__content {
   align-self: flex-end;
 }
 
-.products__name, .products__price {
+.products__price {
   font-size: var(--normal-font-size);
+    color: var(--title-color);
+
+}
+.products__name {
+  font-size: var(--smaller-font-size);
+    color: var(--text-color);
+
 }
 
 
@@ -648,6 +673,23 @@ text-align: center;
   }
 }
 
+
+@media screen and (max-width: 576px) {
+
+.products__card {
+height: 175px;
+}
+}
+
+
+@media screen and (min-width: 465px) {
+  .products__card {
+height: 153px;
+}
+.home__data {
+    padding-top: 11rem;
+}
+}
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .home__container {
@@ -658,7 +700,7 @@ text-align: center;
   }
   .home__img {
     top: -7rem;
-    left: 0;
+    left: 1rem;
   }
   .specs__img {
     position: initial;
@@ -685,7 +727,9 @@ text-align: center;
     display: block;
     margin: 0 auto;
   }
-
+  .products__card {
+height: 153px;
+}
 }
 
 @media screen and (min-width: 767px) {
@@ -724,7 +768,7 @@ text-align: center;
     padding-top: 8rem;
   }
   .specs__img {
-    width: 300px;
+    width: 510px;
   }
   .case__container {
     column-gap: 5rem;
@@ -736,7 +780,7 @@ text-align: center;
     margin-bottom: var(--mb-2);
   }
   .discount__container {
-    grid-template-columns: 250px max-content;
+    grid-template-columns: 330px max-content;
     justify-content: center;
     column-gap: 5rem;
     padding: 3rem 0;
@@ -765,6 +809,18 @@ text-align: center;
   }
 }
 
+@media screen and  (min-width: 968px) {
+.products__card {
+height: 163px;
+}
+.products__title {
+  width: 198px;
+}}
+
+
+
+
+
 /* For large devices */
 @media screen and (min-width: 1024px) {
   .container {
@@ -779,14 +835,12 @@ text-align: center;
     top: -5rem;
     left: 3.5rem;
   }
-  .home__description {
-    padding-right: 5rem;
-  }
+
   .sponsor__img {
     width: 100px;
   }
   .discount__img {
-    width: 400px;
+    width: 300px;
   }
   .footer__container {
     padding-top: 3rem;
