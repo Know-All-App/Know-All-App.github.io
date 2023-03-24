@@ -393,12 +393,12 @@ width:40%;
 }
 
 .terms__title {
-  font-size: var(--normal-font-size);
+  font-size: var(--h2-font-size);
   font-weight: var(--font-medium);
 }
 
 .terms__subtitle {
-  font-size: var(--smaller-font-size);
+  font-size: var(--normal-font-size);
 }
 /*=============== BUTTONS ===============
 
