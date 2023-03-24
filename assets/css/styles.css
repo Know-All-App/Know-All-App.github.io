@@ -21,7 +21,7 @@
   --biggest-font-size: 5rem;
   --bigger-font-size: 3.5rem;
   --big-font-size: 2.5rem;
-    --h1-font-size: 2rem;
+    --h1-font-size: 1.6rem;
 
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
@@ -236,14 +236,19 @@ img {
 /*=============== HOME ===============*/
 .home__img {
   width: 250px;
-
+    top: -5rem;
+    right: 1.5rem;
+    width: 46%;
   position: absolute;
-  top: -6rem;
   right: 1.5rem;
 }
+@media screen and (max-width: 767px) {
+.appstore__img {
+  width: 40%;
+}}
 
 .home__data {
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 
 .home__header {
@@ -264,7 +269,7 @@ img {
 
 .home__subtitle {
   font-size: var(--big-font-size);
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-1);
 }
 
 .home__title-description {
@@ -275,7 +280,8 @@ img {
 
 .home__description {
   margin-bottom: var(--mb-2-5);
-  line-height: var(--text-line-height);
+    font-size: var(--h3-font-size);
+
 }
 
 .home__price {
@@ -417,7 +423,7 @@ img {
 }
 
 .discount__title {
-  font-size: var(--h2-font-size);
+  font-size: var(--h1-font-size);
   margin-bottom: var(--mb-0-75);
 }
 
@@ -455,7 +461,7 @@ img {
 .products__title {
   font-size: var(--h1-font-size);
 text-align: center;
-  width: 200px;
+  width: 180px;
   position: absolute;
   inset: 0;
   margin-right: auto;
