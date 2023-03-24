@@ -21,6 +21,8 @@
   --biggest-font-size: 5rem;
   --bigger-font-size: 3.5rem;
   --big-font-size: 2.5rem;
+    --h1-font-size: 2rem;
+
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
   --normal-font-size: .938rem;
@@ -47,6 +49,8 @@
     --biggest-font-size: 7.5rem;
     --bigger-font-size: 4.5rem;
     --big-font-size: 4rem;
+        --h1-font-size: 2rem;
+
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -234,14 +238,10 @@ img {
   width: 250px;
 
   position: absolute;
-  top: -16rem;
+  top: -6rem;
   right: 1.5rem;
 }
-@media (max-width: 575px) {
-.home__img  {
-    max-width: 50%;
-  }
-}
+
 .home__data {
   padding-top: 5rem;
 }
@@ -340,12 +340,12 @@ img {
 }
 
 .specs__title {
-  font-size: var(--normal-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
 }
 
 .specs__subtitle {
-  font-size: var(--smaller-font-size);
+  font-size: var(--normal-font-size);
 }/*=============== TERMS ===============*/
 .terms__container {
   position: relative;
@@ -426,8 +426,7 @@ img {
 }
 
 .discount__img {
-  width: 300px;
-  position: absolute;
+  width: 400px;
   top: 4rem;
   right: -11rem;
 }
@@ -439,7 +438,7 @@ img {
 
 .products__container {
   grid-template-columns: repeat(2, 1fr);
-  gap: 5rem 1.5rem;
+  gap: 5rem .5rem;
   padding-top: 3rem;
 }
 
@@ -453,34 +452,27 @@ img {
 
 }
 
-.products__img {
-  width: 80px;
+.products__title {
+  font-size: var(--h1-font-size);
+text-align: center;
+  width: 200px;
   position: absolute;
   inset: 0;
   margin-right: auto;
   margin-left: auto;
-  top: -3rem;
+  top: 1rem;
 }
 
 .products__content {
   align-self: flex-end;
 }
 
-.products__title, .products__price {
-  font-size: var(--small-font-size);
+.products__name, .products__price {
+  font-size: var(--normal-font-size);
 }
 
-.products__price {
-  font-weight: var(--font-semi-bold);
-}
 
-.products__button {
-  position: absolute;
-  right: .5rem;
-  bottom: .5rem;
-  padding: .5rem;
-  border-radius: .35rem;
-}
+
 
 /*=============== FOOTER ===============*/
 .footer__container {
@@ -607,11 +599,7 @@ img {
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
-@media (max-width: 575px) {
-  .discount__img {
-    display: none;
-  }
-}
+
 @media screen and (max-width: 340px) {
   .container {
     margin-left: var(--mb-1);
@@ -688,16 +676,10 @@ img {
   }
   .discount__img {
     position: initial;
+    display: block;
+    margin: 0 auto;
   }
-  .discount__container {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-  }
-  .products__container {
-    grid-template-columns: repeat(3, 142px);
-    justify-content: center;
-  }
+
 }
 
 @media screen and (min-width: 767px) {
@@ -729,7 +711,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
   .home__img {
-    top: -9rem;
+    top: 2rem;
     left: 4rem;
   }
   .home__data {
@@ -760,10 +742,10 @@ img {
   .discount__description {
     margin-bottom: var(--mb-2);
   }
-  .products__container {
-    grid-template-columns: repeat(3, 162px);
-    gap: 6rem 3rem;
-    padding-top: 5rem;
+ .products__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1.5rem;
+    padding-top: 3rem;
   }
   .products__card {
     height: 152px;
@@ -785,7 +767,7 @@ img {
   }
   .home__img {
     width: 300px;
-    top: -15rem;
+    top: -2rem;
   }
   .home__title {
     top: -5rem;
@@ -798,7 +780,7 @@ img {
     width: 100px;
   }
   .discount__img {
-    width: 350px;
+    width: 400px;
   }
   .footer__container {
     padding-top: 3rem;
