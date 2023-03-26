@@ -324,6 +324,7 @@ font-weight: bold;
   padding: .8rem 1.25rem;
   border-radius: .5rem;
     font-size: .9rem; /* specify the desired font size value */
+font-weight: 500;
 
 }
 
@@ -895,7 +896,7 @@ width:40%;
     width: 95px;
   }
   .footer__container {
-    grid-template-columns: .4fr .7fr .7fr 1fr;
+    grid-template-columns: .2fr .9fr .4fr;
   }
 }
 
