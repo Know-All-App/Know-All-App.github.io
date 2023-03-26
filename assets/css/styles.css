@@ -321,17 +321,19 @@ font-weight: bold;
   display: inline-block;
   background-color: var(--white-color);
   color: var(--black-color);
-  padding: .8rem 1.25rem;
+  padding: .7rem 1.25rem;
   border-radius: .5rem;
     font-size: .9rem; /* specify the desired font size value */
 font-weight: 500;
-
+  border: 2px solid transparent; /* add transparent border */
 }
 
 .appbutton:hover {
  border: 2px solid hsl(0, 0%, 90%);
   background-color: hsl(0, 0%, 10%);
-  color: var(--white-color);}
+  color: var(--white-color);
+    position: relative;
+  }
 
 .appbutton__icon {
   font-size: 1.2rem;
