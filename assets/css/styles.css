@@ -531,7 +531,7 @@ text-align: center;
 .products__title {
   font-size: var(--h1-font-size);
 text-align: center;
-  width: 167px;
+  width: 175px;
   position: absolute;
   inset: 0;
   margin-right: auto;
