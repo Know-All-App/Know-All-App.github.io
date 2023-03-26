@@ -323,6 +323,8 @@ font-weight: bold;
   color: var(--black-color);
   padding: .8rem 1.25rem;
   border-radius: .5rem;
+    font-size: .9rem; /* specify the desired font size value */
+
 }
 
 .appbutton:hover {
@@ -528,7 +530,7 @@ text-align: center;
 .products__title {
   font-size: var(--h1-font-size);
 text-align: center;
-  width: 159px;
+  width: 167px;
   position: absolute;
   inset: 0;
   margin-right: auto;
@@ -625,7 +627,7 @@ text-align: center;
 }
 
 .footer__copy {
-  margin-top: 5rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -813,9 +815,13 @@ width:40%;
 
 
 @media screen and (min-width: 767px) {
-  body {
+  .body {
     margin: 0;
   }
+  .appbutton {
+     font-size: 1rem; /* specify the desired font size value */
+
+}
   .section {
     padding: 6rem 0 2rem;
   }
@@ -917,7 +923,7 @@ height: 163px;
   }
   .home__img {
     width: 300px;
-    top: -2rem;
+    top: 3rem;
   }
   .home__title {
     top: -5rem;
@@ -932,6 +938,6 @@ height: 163px;
     padding-top: 3rem;
   }
   .footer__copy {
-    margin-top: 9rem;
+    margin-top: 2rem;
   }
 }
