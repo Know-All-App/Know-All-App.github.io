@@ -88,6 +88,8 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--white-color);
+
 }
 
 button,
@@ -145,7 +147,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background: transparent;
+  background-color: var(--body-color);
 }
 
 
@@ -173,17 +175,7 @@ img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-  .nav__menu {
-    position: fixed;
-    background-color: var(--body-color);
-    top: -100%;
-    left: 0;
-    width: 100%;
-    padding: 4rem 0 3rem;
-    transition: .4s;
-  }
-}
+
 
 .nav__list {
   display: flex;
@@ -248,10 +240,7 @@ img {
 
 
 
-@media screen and (max-width: 767px) {
-.appstore__img {
-width:40%;
-}}
+
 .home__data {
   padding-top: 5rem;
 }
@@ -284,9 +273,9 @@ width:40%;
 }
 
 .home__description {
-  font-size: var(--h3-font-size);
+  font-size: var(--normal-font-size);
 
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-1-5);
 }
 
 .home__price {
@@ -328,6 +317,56 @@ font-weight: bold;
   column-gap: .75rem;
 }
 
+.appbutton {
+  display: inline-block;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: .8rem 1.25rem;
+  border-radius: .5rem;
+}
+
+.appbutton:hover {
+ border: 2px solid hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 10%);
+  color: var(--white-color);}
+
+.appbutton__icon {
+  font-size: 1.2rem;
+}
+
+.appbutton--flex {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .75rem;
+}
+
+.navbutton {
+
+  display: inline-block;
+   border: 1px solid hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 10%);
+  color: var(--white-color);
+  font-size: .7rem; /* specify the desired font size value */
+
+  padding: .45rem .5rem;
+  border-radius: .5rem;
+}
+
+.navbutton:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  }
+
+.navbutton__icon {
+  font-size: .8rem;
+}
+
+.navbutton--flex {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .35rem;
+
+}
 /*=============== SPONSOR ===============*/
 .sponsor__img {
   width: 90px;
@@ -449,11 +488,13 @@ font-weight: bold;
 }
 
 .discount__description {
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-2);
 }
 
 .discount__img {
-  width: 300px;
+  width: 250px;
+    display: block;
+  margin: auto;
   top: 4rem;
   right: -11rem;
 }
@@ -467,6 +508,10 @@ font-weight: bold;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem 1rem;
   padding-top: 1rem;
+}
+.products__subtitle {
+  font-size: var(--h3-font-size);
+text-align: center;
 }
 
 .products__card {
@@ -679,27 +724,36 @@ text-align: center;
 }
 
 
-@media screen and (max-width: 576px) {
 
-.products__card {
-height: 175px;
-}
-.home__img {
-  top: -6rem;
-width:41%;
-}
-}
 
 
 @media screen and (min-width: 465px) {
   .products__card {
 height: 153px;
 }
-.home__data {
-    padding-top: 9rem;
-}
 }
 /* For medium devices */
+
+@media screen and (min-width: 450px) {
+
+  .home__data {
+    padding-top: 10rem;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+
+.products__card {
+height: 175px;
+}
+.home__img {
+  top: -3rem;
+width:41%;
+}
+
+}
+
 @media screen and (min-width: 576px) {
   .home__container {
     grid-template-columns: .8fr 1fr;
@@ -713,6 +767,7 @@ height: 153px;
   }
   .specs__img {
     position: initial;
+
   }
   .specs__container {
     grid-template-columns: repeat(2, 1fr);
@@ -740,6 +795,22 @@ height: 153px;
 height: 153px;
 }
 }
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding: 4rem 0 3rem;
+    transition: .4s;
+  }
+  .appstore__img {
+width:40%;
+}
+}
+
 
 @media screen and (min-width: 767px) {
   body {
@@ -776,8 +847,12 @@ height: 153px;
   .home__data {
     padding-top: 8rem;
   }
+  .home__description {
+  font-size: var(--h3-font-size);
+  }
   .specs__img {
     width: 510px;
+
   }
   .case__container {
     column-gap: 5rem;
@@ -832,6 +907,10 @@ height: 163px;
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
+.navbutton {
+  font-size: .9rem; /* specify the desired font size value */
+   border: 2px solid hsl(0, 0%, 90%);
+}
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -848,9 +927,7 @@ height: 163px;
   .sponsor__img {
     width: 100px;
   }
-  .discount__img {
-    width: 300px;
-  }
+
   .footer__container {
     padding-top: 3rem;
   }

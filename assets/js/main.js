@@ -30,14 +30,9 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-function scrollHeader(){
-    const header = document.getElementById('header')
-    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)
 
-/*=============== SHOW SCROLL UP ===============*/ 
+
+/*=============== SHOW SCROLL UP ===============*/
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 200 viewport height, add the show-scroll class to the a tag with the scroll-top class
@@ -77,8 +72,10 @@ sr.reveal(`.home__header, .section__title`,{delay: 600})
 sr.reveal(`.home__footer`,{delay: 700})
 sr.reveal(`.home__img`,{delay: 900, origin: 'top'})
 
-sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy`,{origin: 'top', interval: 100})
+sr.reveal(`.sponsor__img, .products__card, .products__subtitle, .footer__logo, .footer__content, .footer__copy`,{origin: 'top'})
 sr.reveal(`.specs__data, .discount__animate`,{origin: 'left', interval: 100})
-sr.reveal(`.specs__img, .discount__img`,{origin: 'right'})
+sr.reveal(`.discount__img`,{origin: 'right'})
+sr.reveal(`.specs__img`,{origin: 'right'})
+
 sr.reveal(`.case__img`,{origin: 'top'})
 sr.reveal(`.case__data`)
