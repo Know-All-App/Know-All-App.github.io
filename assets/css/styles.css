@@ -165,6 +165,7 @@ img {
 }
 .nav__title {
   font-size: var(--h2-font-size);
+    font-weight: 600;
   padding-left: 1rem;
 }
 
