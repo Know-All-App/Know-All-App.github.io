@@ -72,8 +72,10 @@ sr.reveal(`.home__header, .section__title`,{delay: 600})
 sr.reveal(`.home__footer`,{delay: 700})
 sr.reveal(`.home__img`,{delay: 900, origin: 'top'})
 
-sr.reveal(`.sponsor__img, .products__card, .products__subtitle, .footer__content`,{origin: 'top'})
-sr.reveal(`.specs__data, .discount__animate`,{origin: 'left', interval: 100})
+sr.reveal(`.sponsor__img, .products__card, .products__subtitle, .footer__content,.terms__bigtitle`,{origin: 'top'})
+sr.reveal(`.specs__data, .discount__animate, .terms__title, .terms__subtitle`,{origin: 'left', interval: 100})
+sr.reveal(`.terms__subtitle`,{origin: 'left', interval: 100})
+
 sr.reveal(`.discount__img`,{origin: 'right'})
 sr.reveal(`.specs__img`,{origin: 'right'})
 
