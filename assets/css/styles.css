@@ -434,6 +434,14 @@ font-weight: 500;
   display: grid;
   grid-template-columns: 1fr;}
 
+.terms__bigtitle {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 4rem;
+  color: white;
+
+}
+
 .terms__data {
   grid-column: 1 / span 2;
 
